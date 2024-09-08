@@ -1,0 +1,56 @@
+.about-me-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 50px 10% 0; /* Jarak atas 40px, kiri/kanan 10% */
+  }
+
+  .about-me-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .about-me-content {
+    flex: 1;
+  }
+
+  .about-me-content h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+
+  .about-me-content p {
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .about-me-content a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  .about-me-content a:hover {
+    text-decoration: underline;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .social-icon {
+    font-size: 30px;
+    color: #333;
+  }
+
+  .social-icon:hover {
+    color: #007bff; /* Ubah warna saat hover jika diperlukan */
+  }

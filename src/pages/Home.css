@@ -1,0 +1,52 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 40px 10%; /* Memberikan jarak atas 40px dan kiri-kanan 10% */
+  }
+
+  .home-description {
+    flex: 1;
+    text-align: justify;
+    max-width: 700px;
+  }
+  .home-image {
+    width: 400px; /* Atur lebar gambar */
+    height: auto; /* Jaga agar proporsi gambar tetap sesuai */
+    object-fit: cover; /* Pastikan gambar memenuhi area dengan baik */
+    border-radius: 10px; /* Tambahkan sedikit sudut melengkung jika diperlukan */
+    margin-right: 20px; /* Jarak antara gambar dan deskripsi*/
+  }
+
+  .home-description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .home-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .home-description ul {
+    list-style-type: disc; /* Memastikan bullet muncul */
+    margin-left: 20px; /* Memberikan sedikit jarak dari kiri */
+    margin-bottom: 20px;
+    text-align: left; /* Membuat bullet points rata kiri */
+  }
+
+  .home-description li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .home-content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    gap: 80px; /* Jarak antara gambar dan deskripsi */
+  }
+

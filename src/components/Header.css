@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--header-background);
+}
+
+.login-button,.theme-button {
+  display: flex;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  gap: 80px;
+  margin: 0; /* Hapus margin default */
+  padding: 0; /* Hapus padding default */
+}
+
+.header ul li {
+  display: inline; /* Menjadikan item list berbaris secara horizontal */
+}
+
+.header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header ul li a.active {
+  border-bottom: 2px solid #ffb200;
+}
+
+.login-button,.theme-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px; /* Jarak dari atas */
+  right: 10px; /* Jarak dari kanan */
+}
+
+.login-button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Styling untuk tombol toggle tema */
+.theme-button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 110px; /* Memberi jarak antara tombol login dan tombol toggle tema */
+}
+
+/* Gaya tambahan untuk dark mode */
+.dark-mode .header {
+  background-color: black;
+}
+
+.dark-mode .login-button, .dark-mode .theme-button {
+  background-color: grey;
+  color: white;
+}
+
+/* Gaya tambahan untuk light mode */
+.light-mode .header {
+  background-color: white;
+}
+
+.light-mode .login-button, .light-mode .theme-button {
+  background-color: lightgrey;
+  color: black;
+}
+
+/* Styling untuk link aktif */
+.active {
+  font-weight: bold;
+}
+.login-button, .theme-button:hover {
+  background-color: #0056b3;
+}
